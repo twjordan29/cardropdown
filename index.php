@@ -29,9 +29,9 @@ include('config.php');
                             <select id="make" class="form-control">
                                 <option>Vehicle Make</option>
                                 <?php
-                                $getMake = mysqli_query($conn, "SELECT * FROM users");
+                                $getMake = mysqli_query($conn, "SELECT * FROM vehicles");
                                 while ($make = mysqli_fetch_assoc($getMake)) {
-                                    echo "<option value='" . $make['username'] . "'>" . $make['username'] . "</option>";
+                                    echo "<option value='" . $make['make'] . "'>" . $make['make'] . "</option>";
                                 }
                                 ?>
                             </select>
