@@ -4,6 +4,10 @@ session_start();
 
 $conn = mysqli_connect("localhost", "root", "jordan88", "vehicles");
 
+if (mysqli_connect_error()) {
+    echo "Failed to connect... Code: " . mysqli_connect_errno();
+}
+
 function login()
 {
     global $conn;
