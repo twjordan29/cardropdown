@@ -2,7 +2,7 @@
 
 session_start();
 
-$conn = mysqli_connect("localhost", "root", "jordan88", "vehicles");
+$conn = mysqli_connect("localhost", "root", "R61HGVkAuYGGsr", "cardropdown");
 
 if (mysqli_connect_error()) {
     echo "Failed to connect... Code: " . mysqli_connect_errno();
