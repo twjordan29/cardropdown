@@ -29,7 +29,7 @@ include('config.php');
                             <select id="make" class="form-control">
                                 <option>Vehicle Make</option>
                                 <?php
-                                $getMake = mysqli_query($conn, "SELECT DISTINCT FROM vehicles ORDER BY make");
+                                $getMake = mysqli_query($conn, "SELECT * FROM vehicles GROUP BY make");
                                 while ($make = mysqli_fetch_assoc($getMake)) {
                                     echo "<option value='" . $make['make'] . "'>" . $make['make'] . "</option>";
                                 }
